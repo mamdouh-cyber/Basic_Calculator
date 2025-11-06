@@ -1,0 +1,138 @@
+body {
+  font-family: Arial , san-serif;
+  background: linear-gradient(-45deg , #667eea , #764ba2 , #f093fb , #f5576c);
+  background-size: 400% 400%;
+  animation: gardientShift 12s ease infinite;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  juatify-content: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  place-item : center;
+}
+
+#design {
+  color : white;
+  text-decoration: underline;
+}
+
+.container_2 {
+  background: rgba(255 , 255 , 255 , 0.1);
+  text-align: center;
+  backdrop-filter: blur(20px);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(0 , 0 , 0 , 0.2);
+  border: 1px solid rgba(255 , 255 , 255 , 0.3);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    backgroud-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background: rgba(255 , 255 , 255 , 0.1);
+  text-align: center;
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0px 20px 40px rgba(0 , 0 , 0 , 0.2);
+  border: 1px solid rgba(255 , 255 , 255 , 0.3);
+}
+
+#Size {
+  text-align: center;
+  background: linear-gradient(45deg , #fff , #f09fea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+
+.calculator{
+  width: 450px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 8px;
+  font-size: 45px;
+}
+
+.display {
+  margin: 1rem 0 1rem 0;
+}
+
+.display.input {
+  width: 100%;
+  height: 60px;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255 , 255 , 255 , 0.9);
+  color: #333;
+  box-shadow: inset 0 4px 8px rgba(0 , 0 , 0 , 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  gap: 12px;
+}
+
+.btn {
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0 , 0 , 0 , 0.2);
+}
+
+.number {
+  background: linear-gradient(145deg , #f8f9fa , #e9ecef);
+  color: #333;
+}
+
+.operator {
+  background: linear-gradient(145deg , #17a2b8 , #138496);
+  color: white;
+}
+
+.equals {
+  background: linear-gradient(145deg , #28a745 , #218838);
+  color: white;
+}
+
+.clear {
+  background: linear-gradient(145deg , #dc3545 , #c82333);
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0 , 0 , 0 , 0.3);
+}
+
+.btn:active {
+  transform: translateY(0);
+}

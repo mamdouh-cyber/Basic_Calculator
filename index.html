@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="Calculator.css" />
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Basic Calculator</title>
+</head>
+<body>
+  <div class="container">
+    
+     <!--title-->
+    
+    <h1 id="Size">Calculator</h1>
+    
+     <!--input problem-->
+    
+    <div class="calculator">
+      <div class="display">
+        <input type="text" id="result" readonly />
+      </div>
+    </div>
+  
+     <!--buttons-->
+  
+   <div class="buttons">
+     <!--1 line-->
+        <button onclick="clearResult()" class="btn clear">C</button>
+        <button onclick="deleteLast()" class="btn opreator"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-filled/48/cancel.png" alt="cancel"/></button>
+        <button onclick="appendToResult('/')" class="btn operator">÷</button>
+        <button onclick="appendToResult('*')" class="btn operator">×</button>
+    
+     <!--2 line-->
+         
+        <button onclick="appendToResult('7')" class="btn number">7</button>
+        <button onclick="appendToResult('8')" class="btn number">8</button>
+        <button onclick="appendToResult('9')" class="btn number">9</button>
+        <button onclick="appendToResult('-')" class="btn operator">-</button>
+         
+     <!--3 line-->    
+         
+        <button onclick="appendToResult('4')" class="btn number">4</button>
+        <button onclick="appendToResult('5')" class="btn number">5</button>
+        <button onclick="appendToResult('6')" class="btn number">6</button>
+        <button onclick="appendToResult('+')" class="btn operator">+</button>
+         
+     <!--4 line--> 
+         
+        <button onclick="appendToResult('1')" class="btn number">1</button>
+        <button onclick="appendToResult('2')" class="btn number">2</button>
+        <button onclick="appendToResult('3')" class="btn number">3</button>
+        <button onclick="appendToResult(')')" class="btn operator">)</button>
+         
+     <!--5 line-->
+         
+        <button onclick="appendToResult('0')" class="btn number">
+          0
+        </button>
+        <button onclick="appendToResult('.')" class="btn number">.</button>
+        <button onclick="appendToResult('(')" class="btn operator">(</button>
+        <button onclick="Calculate()" class="btn equals">
+          =
+        </button>
+   </div>
+  </div>
+  <div class="container_2">
+    <h1 id="design">
+      Made By
+    </h1>
+      <br>
+    <h1 style="font-size:65px;">
+      Mamdouh Ayman
+    </h1>
+  </div>
+  <script src="Calculator.js"></script>
+</body>
+</html>
